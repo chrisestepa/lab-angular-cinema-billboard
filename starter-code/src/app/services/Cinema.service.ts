@@ -106,10 +106,11 @@ export class Cinema {
     }
   ]
 
-  constructor() { }
+  constructor() {
+   }
 
   getMovies() {
-
+    return this.movies;
   }
 
   getMovie(id) {

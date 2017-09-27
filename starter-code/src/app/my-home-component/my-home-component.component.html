@@ -1,3 +1,17 @@
-<p>
-  my-home-component works!
-</p>
+<!-- HOME -->
+
+<h1>Home</h1>
+
+
+<!-- <button (click)="showMovies()" type="button" name="button">Show Movies</button> -->
+
+<div class="movies">
+  <ul>
+    <li *ngFor="let movie of movies">
+      <h2>ROOM: {{ movie.room }}</h2>
+      <a [routerLink]="['movie', movie.id]"><img [src]="movie.poster">></a>
+      <h2>{{ movie.title }}</h2>
+    </li>
+  </ul>
+
+</div>
