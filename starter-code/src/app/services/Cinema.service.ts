@@ -84,7 +84,6 @@ export class Cinema {
       hours: ["21.00", "23.00"],
       room: 4
     }, {
-    {
       id: 5,
       title: "Schindler's List",
       poster: "https://i.imgur.com/IWZJOmu.jpg",
