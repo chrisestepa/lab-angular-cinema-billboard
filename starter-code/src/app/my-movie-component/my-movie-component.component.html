@@ -1,4 +1,26 @@
+<div class="container">
 
-<h3>
-  This is the page for the room: {{ movieId }}
-</h3>
+  <div class="image">
+    <img [src]="film[0].poster">
+  </div>
+
+  <div class="info">
+    <h3><strong>Title: </strong>{{ film[0].title }}</h3>
+    <h3><strong>Synopsis: </strong>{{ film[0].synopsis }}</h3>
+    <h3><strong>Genres: </strong></h3>
+    <ul>
+      <li *ngFor="let genre of film[0].genres">{{ genre }}</li>
+    </ul>
+    <h3><strong>Year: </strong>{{ film[0].year }}</h3>
+    <h3><strong>Director: </strong>{{ film[0].director }}</h3>
+    <h3><strong>Actors: </strong></h3>
+    <ul>
+      <li *ngFor="let actor of film[0].actors">{{ actor }}</li>
+    </ul>
+    <h3><strong>Hours: </strong></h3>
+    <ul>
+      <li *ngFor="let hour of film[0].hours">{{ hour }}</li>
+    </ul>
+  </div>
+
+</div>

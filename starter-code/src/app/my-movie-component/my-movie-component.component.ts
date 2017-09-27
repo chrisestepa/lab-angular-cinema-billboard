@@ -10,21 +10,17 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MyMovieComponentComponent implements OnInit {
   movieId: number;
-  film: Object;
+  film: Object = {};
   constructor(private route: ActivatedRoute, private cinema: Cinema) { }
 
   ngOnInit() {
     this.route.params
-      .subscribe((params) => {
-        this.movieId = Number(params['id']);
-        this.showOneMovie();
-      });
-
+      .subscribe((params) => this.movieId = Number(params['id']));
+      this.showOneMovie();
   }
 
   showOneMovie() {
     this.film = this.cinema.getMovie(this.movieId);
-    console.log(this.film);
   }
 
 }

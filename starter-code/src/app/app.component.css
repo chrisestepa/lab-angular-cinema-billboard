@@ -1,0 +1,18 @@
+h1 {
+  float: left;
+}
+
+a {
+  float: left;
+  margin: 30px;
+}
+
+.router {
+  margin-top: 10px;
+  background: lightblue;
+  color: navy;
+}
+
+.clear {
+  clear: both;
+}

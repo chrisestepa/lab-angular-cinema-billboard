@@ -114,7 +114,7 @@ export class Cinema {
   }
 
   getMovie(id) {
-    return this.movies.filter(mv => mv[id].match(id))
+    return this.movies.filter(mv => mv["id"]==id);
   }
 
 }

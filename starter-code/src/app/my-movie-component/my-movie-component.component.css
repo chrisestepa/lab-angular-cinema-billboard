@@ -1,0 +1,25 @@
+.container {
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.image {
+  width: 30%;
+  margin: 0 30px;
+}
+
+.image img{
+  height: 530px;
+  display: inline-block;
+  float: left;
+}
+
+.info {
+  font-size: 1vw;
+  border: 2px solid blue;
+  padding: 20px;
+  margin: 0 30px;
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
