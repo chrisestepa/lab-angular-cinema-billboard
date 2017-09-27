@@ -15,7 +15,5 @@ export class MyHomeComponentComponent implements OnInit {
     this.movies = this.cinema.getMovies();
   }
 
-  showMovies() {
-  }
 
 }
